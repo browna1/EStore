@@ -4,6 +4,7 @@ import com.zzh.estore.entity.Cart;
 import com.zzh.estore.service.ICartService;
 import com.zzh.estore.util.JsonResult;
 import com.zzh.estore.vo.CartVO;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +18,7 @@ import java.util.List;
  * @description ：
  * @date ：Created in 2022/1/14 16:37
  */
+@Api(tags = "操作购物车数据")
 @RestController
 @RequestMapping("cart")
 public class CartController extends BaseController{

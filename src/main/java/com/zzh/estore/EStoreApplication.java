@@ -8,10 +8,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.unit.DataSize;
 import org.springframework.util.unit.DataUnit;
+import springfox.documentation.oas.annotations.EnableOpenApi;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import javax.servlet.MultipartConfigElement;
 
 //@Configuration // 表示配置类（设置上传文件最大值用到）
+@EnableOpenApi
 @SpringBootApplication
 @MapperScan("com.zzh.estore.mapper")
 public class EStoreApplication {

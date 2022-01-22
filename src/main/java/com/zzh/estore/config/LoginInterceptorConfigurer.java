@@ -36,9 +36,23 @@ public class LoginInterceptorConfigurer implements WebMvcConfigurer {
         patterns.add("/users/login");
         patterns.add("/districts/**");
         patterns.add("/product/**");
+//        patterns.add("/swagger**/**");
+//        patterns.add("/webjars/**");
+//        patterns.add("/v2/**");
+//        patterns.add("/favicon.ico");
+
+//        patterns.add("/swagger-ui/**");
+//        patterns.add("/swagger-ui/index.html#/**");
+//        patterns.add("swagger/**");
+//        patterns.add("/swagger-ui.html");
+//        patterns.add("swagger-ui.html");
+//        patterns.add("/webjars/**");
+//        patterns.add("/swagger-ui.html/*");
+//        patterns.add("/swagger-resources");
+//        patterns.add("/swagger-resources/**");
         // 完成拦截器的注册
         registry.addInterceptor(interceptor)
                 .addPathPatterns("/**")
-                .excludePathPatterns(patterns); // 要拦截的url
+                .excludePathPatterns(patterns);
     }
 }

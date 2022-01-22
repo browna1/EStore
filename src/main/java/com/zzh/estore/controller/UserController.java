@@ -4,6 +4,7 @@ import com.zzh.estore.controller.ex.*;
 import com.zzh.estore.entity.User;
 import com.zzh.estore.service.IUserService;
 import com.zzh.estore.util.JsonResult;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -20,6 +21,7 @@ import java.util.UUID;
  * @description ：
  * @date ：Created in 2022/1/8 11:24
  */
+@Api(tags = "用户")
 @RestController //等于@Controller+@ResponseBody
 @RequestMapping("users")
 public class UserController extends BaseController{

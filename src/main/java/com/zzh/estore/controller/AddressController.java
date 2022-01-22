@@ -3,6 +3,7 @@ package com.zzh.estore.controller;
 import com.zzh.estore.entity.Address;
 import com.zzh.estore.service.IAddressService;
 import com.zzh.estore.util.JsonResult;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,6 +17,7 @@ import java.util.List;
  * @description ：
  * @date ：Created in 2022/1/12 9:17
  */
+@Api(tags = "操作收货地址")
 @RestController
 @RequestMapping("address")
 public class AddressController extends BaseController{

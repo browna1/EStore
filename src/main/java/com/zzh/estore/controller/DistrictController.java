@@ -3,6 +3,7 @@ package com.zzh.estore.controller;
 import com.zzh.estore.entity.District;
 import com.zzh.estore.service.IDistrictService;
 import com.zzh.estore.util.JsonResult;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,6 +15,7 @@ import java.util.List;
  * @description ：
  * @date ：Created in 2022/1/12 10:34
  */
+@Api(tags = "省市区")
 @RestController
 @RequestMapping("districts")
 public class DistrictController extends BaseController{

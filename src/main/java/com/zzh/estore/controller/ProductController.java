@@ -3,6 +3,7 @@ package com.zzh.estore.controller;
 import com.zzh.estore.entity.Product;
 import com.zzh.estore.service.IProductService;
 import com.zzh.estore.util.JsonResult;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +17,7 @@ import java.util.List;
  * @description ：
  * @date ：Created in 2022/1/14 13:05
  */
+@Api(tags = "产品")
 @RestController
 @RequestMapping("product")
 public class ProductController extends BaseController{
