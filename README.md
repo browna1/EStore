@@ -1,8 +1,8 @@
-# EStore
+# EStore  基于springboot框架开发的电脑商城系统
+
 
 ### 1 系统开发及运行环境
 
-基于springboot框架开发的电脑商城系统
 
 1.操作系统：Windows 10
 
